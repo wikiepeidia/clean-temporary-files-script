@@ -8,7 +8,7 @@ This script is designed to remove any temporary files from your computer.
 - [Contribution](#sources)
 - [Script explain in the nutshell](#structures)
 - [Release](#Releases)
-- [Notices][#notices)
+- [Notices](#Notices)
 ## Usage:
 - Right-click the batch file and select "Run as administrator" to initiate the cleaning process.
 - For PowerShell, you need to run `Set-ExecutionPolicy -ExecutionPolicy bypass` to execute the script. If you have never run any PowerShell scripts before, you may need to run it as an administrator for full performance.
@@ -74,6 +74,7 @@ The script will attempt to remove files with the following extensions: `.tmp`, `
 
 ## Notices:
 - Certain files are currently in use, which is normal, and you may encounter an "access is denied" message.
+- Please remember that this script will delete files contain any of the above [extension](#structures) in it, for instance: *.old, *.THISISTHEOLDFILE... 
 - Batch files can run in PowerShell, but vice versa will not work.
 - It is important to note that renaming your files with any of the listed extensions poses a high risk of permanent data loss. Deleted files cannot be recovered, so it is recommended to double-check before running the script.
 - For PowerShell, you need to run `Set-ExecutionPolicy -ExecutionPolicy bypass` if you have never run PowerShell scripts before.
